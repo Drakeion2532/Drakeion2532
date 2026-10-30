@@ -5,7 +5,8 @@
   <a href="mailto:shubhanpunde@gmail.com"><img src="https://img.shields.io/badge/Email-shubhanpunde%40gmail.com-FFB23E?style=for-the-badge&logo=gmail&logoColor=white&labelColor=141419"/></a>
   <a href="https://ieeexplore.ieee.org/document/10725412"><img src="https://img.shields.io/badge/IEEE-2%20papers-FF3B5C?style=for-the-badge&logo=ieee&logoColor=white&labelColor=141419"/></a>
   <a href="https://certification.saviynt.com/961c5f95-ccc1-4138-a715-f018e287609d#acc.ueJPXyiW"><img src="https://img.shields.io/badge/Saviynt-ISAA%20certified-C084FC?style=for-the-badge&labelColor=141419"/></a>
-  <img src="https://img.shields.io/badge/Pune%2C%20India-open%20to%20relocate-5BC0EB?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=141419"/>
+  <img src="https://img.shields.io/badge/Open%20to%20work-India%20%C2%B7%20USA%20%C2%B7%20Remote-4ADE80?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=141419"/>
+  <img src="https://img.shields.io/badge/U.S.%20Citizen-no%20sponsorship%20needed-5BC0EB?style=for-the-badge&labelColor=141419"/>
 </p>
 
 <img src="assets/h-about.svg" width="100%" alt="About me"/>
@@ -33,7 +34,7 @@ I build tools that **end in a decision someone can act on**: allow / step-up MFA
 - **Saviynt ISAA** · IBM Data Warehouse Engineer certified
 - **3 papers** published, 2 in **IEEE Xplore**
 - **13 of 14** projects tested automatically in CI
-- India · U.S. · remote, available now
+- **U.S. Citizen** (no sponsorship) · based in Pune · open to India, USA and remote · available now
 
 </td>
 </tr>
