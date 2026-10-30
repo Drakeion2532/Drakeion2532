@@ -1,69 +1,535 @@
 {
-  "tracks": {
-    "ds":   {"name": "Data Science & ML",          "short": "Data Science",  "color": "#FF5A1F"},
-    "risk": {"name": "Fraud & Credit Risk",        "short": "Risk Analytics", "color": "#FFB23E"},
-    "sec":  {"name": "Security & Detection / IAM", "short": "Security",      "color": "#FF3B5C"},
-    "de":   {"name": "Data Engineering",           "short": "Data Eng",      "color": "#F7D154"},
-    "swe":  {"name": "Software & Backend",         "short": "Software",      "color": "#5BC0EB"},
-    "cv":   {"name": "Computer Vision & IoT",      "short": "CV / IoT",      "color": "#4ADE80"},
-    "app":  {"name": "Mobile & Product",           "short": "Mobile",        "color": "#C084FC"}
+ "tracks": {
+  "sec": {
+   "name": "Security & Detection / IAM",
+   "short": "Security",
+   "color": "#FF3B5C"
   },
-  "projects": [
-    {"id": "card-fraud", "repo": "card-fraud-analytics-spark", "title": "Card Fraud Analytics at Scale",
-     "tagline": "Spark + Hive pipeline that turns 10M card swipes into a daily review queue",
-     "tracks": ["risk", "de", "ds"], "stack": ["PySpark", "Spark SQL", "Hive", "MLlib"], "tests": true,
-     "metrics": [["82.2%", "fraud caught"], ["vs 47.2%", "rules, same alerts"], ["10M", "transactions"]]},
-    {"id": "credit", "repo": "credit-default-scorecard", "title": "Credit Default Scorecard",
-     "tagline": "Points scorecard + approve/decline tool with plain-language reasons",
-     "tracks": ["risk", "ds"], "stack": ["scikit-learn", "WoE / IV", "Logistic Reg."], "tests": true,
-     "metrics": [["0.60", "Gini"], ["0.48", "KS"], ["-34%", "expected cost"]]},
-    {"id": "identity", "repo": "identity-risk-engine", "title": "Identity Risk Engine (UEBA)",
-     "tagline": "Zero Trust login scoring: allow, step-up MFA or block, with reasons",
-     "tracks": ["sec", "ds", "swe"], "stack": ["Isolation Forest", "FastAPI", "Okta logs"], "tests": true,
-     "metrics": [["74 / 74", "attacks caught"], ["0.976", "PR-AUC"], ["~10x", "fewer false alerts"]]},
-    {"id": "phish", "repo": "phishing-url-detector", "title": "PhishGuard",
-     "tagline": "Scam & phishing checker for SMS, WhatsApp, email and links + Chrome extension",
-     "tracks": ["sec", "ds", "swe"], "stack": ["XGBoost", "FastAPI", "Chrome ext."], "tests": true,
-     "metrics": [["97.4%", "accuracy"], ["1.9%", "false positives"], ["120K", "URLs evaluated"]]},
-    {"id": "nids", "repo": "network-intrusion-detection", "title": "Explainable Intrusion Detection",
-     "tagline": "Ensemble + zero-day anomaly detector with SHAP reasons for SOC triage",
-     "tracks": ["sec", "ds"], "stack": ["XGBoost", "Isolation Forest", "SHAP"], "tests": true,
-     "metrics": [["0.970", "ROC-AUC"], ["97.0%", "alert precision"], ["17", "unseen attack types"]]},
-    {"id": "covid", "repo": "covid19-time-series-forecasting", "title": "COVID-19 Forecasting (UNLV)",
-     "tagline": "30-day forecasts for 6 countries with a leak-free rolling backtest",
-     "tracks": ["ds"], "stack": ["SARIMAX", "Prophet", "Holt-Winters"], "tests": true,
-     "metrics": [["-25%", "error vs naive"], ["6", "countries"], ["56%", "surges flagged early"]]},
-    {"id": "traffic", "repo": "Traffic-Management-using-Deep-Learning", "title": "AI Traffic Signals (IEEE)",
-     "tagline": "YOLOv8 + ByteTrack counts vehicles and sets green time by demand",
-     "tracks": ["cv", "ds"], "stack": ["YOLOv8", "ByteTrack", "OpenCV"], "tests": true,
-     "metrics": [["+14.1%", "throughput"], ["-71%", "idle green time"], ["IEEE", "ICCCNT 2024"]]},
-    {"id": "plant", "repo": "plant-disease-detection-cnn", "title": "Plant Disease CNN",
-     "tagline": "Leaf photo to diagnosis and treatment advice, 14 crops",
-     "tracks": ["cv", "ds"], "stack": ["PyTorch", "CNN", "Web app"], "tests": true,
-     "metrics": [["99.05%", "test accuracy"], ["38", "classes"], ["0.986", "macro F1"]]},
-    {"id": "kitchen", "repo": "smart-kitchen-iot", "title": "Smart Kitchen IoT",
-     "tagline": "Arduino + ESP8266 sensors with an ML hazard detector and live dashboard",
-     "tracks": ["cv", "swe", "ds"], "stack": ["ESP8266", "C++", "Python ML"], "tests": true,
-     "metrics": [["12 s", "gas-leak alarm"], ["vs 213 s", "fixed threshold"], ["0.986", "hazard F1"]]},
-    {"id": "sahyog", "repo": "doctor-sahyog-health-card", "title": "Doctor Sahyog Health Card",
-     "tagline": "QR health card EHR with role-based access, audit trail and FHIR export",
-     "tracks": ["swe", "app", "sec"], "stack": ["Flask", "Fernet / HMAC", "FHIR R4"], "tests": true,
-     "metrics": [["115", "Figma screens"], ["3", "access roles"], ["GIJET", "paper 2023"]]},
-    {"id": "friends", "repo": "Friend-Recommendation-Using-Graph-Data-Structure", "title": "Friend Recommendation in C",
-     "tagline": "Link prediction (Adamic-Adar) on a real 22K-user social graph",
-     "tracks": ["swe", "ds"], "stack": ["C11", "Graphs", "BFS"], "tests": true,
-     "metrics": [["83%", "hit rate@10"], ["0.15 ms", "per query"], ["171K", "friendships"]]},
-    {"id": "mst", "repo": "Graphical-demonstration-of-Minimum-Spanning-Tree-Krushkal-s-Algorithm-using-OpenGL", "title": "Kruskal MST Visualiser",
-     "tagline": "OpenGL animation of Kruskal + union-find; India fibre backbone case study",
-     "tracks": ["swe"], "stack": ["C++", "OpenGL", "Union-Find"], "tests": true,
-     "metrics": [["-59%", "cable length"], ["14", "cities linked"], ["5,233 km", "MST total"]]},
-    {"id": "os", "repo": "OS-Labs", "title": "Operating Systems Labs",
-     "tagline": "CPU, disk and page-replacement algorithms checked against textbook answers",
-     "tracks": ["swe"], "stack": ["C", "Bash", "pytest"], "tests": true,
-     "metrics": [["200", "random workloads"], ["13", "algorithms"], ["CI", "verified"]]},
-    {"id": "rylaide", "repo": "Rylaide", "title": "Rylaide (in progress)",
-     "tagline": "Offline rider intercom + group ride app for motorcycles and EVs",
-     "tracks": ["app", "swe"], "stack": ["Kotlin", "Android", "Figma"], "tests": false,
-     "metrics": [["Offline", "push-to-talk"], ["SOS", "with location"], ["WIP", "Android"]]}
-  ]
+  "ds": {
+   "name": "Data Science & ML",
+   "short": "Data Science",
+   "color": "#FF5A1F"
+  },
+  "risk": {
+   "name": "Fraud & Credit Risk",
+   "short": "Risk Analytics",
+   "color": "#FFB23E"
+  },
+  "de": {
+   "name": "Data Engineering",
+   "short": "Data Eng",
+   "color": "#F7D154"
+  },
+  "swe": {
+   "name": "Software & Backend",
+   "short": "Software",
+   "color": "#5BC0EB"
+  },
+  "cv": {
+   "name": "Computer Vision & IoT",
+   "short": "CV / IoT",
+   "color": "#4ADE80"
+  },
+  "app": {
+   "name": "Mobile & Product",
+   "short": "Mobile",
+   "color": "#C084FC"
+  }
+ },
+ "projects": [
+  {
+   "id": "identity",
+   "repo": "identity-risk-engine",
+   "title": "Identity Risk Engine (UEBA)",
+   "tagline": "Zero Trust login scoring: allow, step-up MFA or block, with reasons",
+   "tracks": [
+    "sec",
+    "ds",
+    "swe"
+   ],
+   "stack": [
+    "Isolation Forest",
+    "FastAPI",
+    "Okta logs"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "74 / 74",
+     "attacks caught"
+    ],
+    [
+     "0.976",
+     "PR-AUC"
+    ],
+    [
+     "~10x",
+     "fewer false alerts"
+    ]
+   ],
+   "ring": {
+    "frac": 1.0,
+    "label": "attacks caught",
+    "value": "74/74"
+   }
+  },
+  {
+   "id": "phish",
+   "repo": "phishing-url-detector",
+   "title": "PhishGuard",
+   "tagline": "Scam & phishing checker for SMS, WhatsApp, email and links + Chrome extension",
+   "tracks": [
+    "sec",
+    "ds",
+    "swe"
+   ],
+   "stack": [
+    "XGBoost",
+    "FastAPI",
+    "Chrome ext."
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "97.4%",
+     "accuracy"
+    ],
+    [
+     "1.9%",
+     "false positives"
+    ],
+    [
+     "120K",
+     "URLs evaluated"
+    ]
+   ],
+   "ring": {
+    "frac": 0.974,
+    "label": "accuracy",
+    "value": "97.4%"
+   }
+  },
+  {
+   "id": "nids",
+   "repo": "network-intrusion-detection",
+   "title": "Explainable Intrusion Detection",
+   "tagline": "Ensemble + zero-day anomaly detector with SHAP reasons for SOC triage",
+   "tracks": [
+    "sec",
+    "ds"
+   ],
+   "stack": [
+    "XGBoost",
+    "Isolation Forest",
+    "SHAP"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "0.970",
+     "ROC-AUC"
+    ],
+    [
+     "97.0%",
+     "alert precision"
+    ],
+    [
+     "17",
+     "unseen attack types"
+    ]
+   ],
+   "ring": {
+    "frac": 0.97,
+    "label": "ROC-AUC",
+    "value": "0.970"
+   }
+  },
+  {
+   "id": "sahyog",
+   "repo": "doctor-sahyog-health-card",
+   "title": "Doctor Sahyog Health Card",
+   "tagline": "QR health card EHR with role-based access, audit trail and FHIR export",
+   "tracks": [
+    "swe",
+    "app",
+    "sec"
+   ],
+   "stack": [
+    "Flask",
+    "Fernet / HMAC",
+    "FHIR R4"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "115",
+     "Figma screens"
+    ],
+    [
+     "3",
+     "access roles"
+    ],
+    [
+     "GIJET",
+     "paper 2023"
+    ]
+   ],
+   "ring": {
+    "frac": 1.0,
+    "label": "encrypted at rest",
+    "value": "AES"
+   }
+  },
+  {
+   "id": "card-fraud",
+   "repo": "card-fraud-analytics-spark",
+   "title": "Card Fraud Analytics at Scale",
+   "tagline": "Spark + Hive pipeline that turns 10M card swipes into a daily review queue",
+   "tracks": [
+    "risk",
+    "de",
+    "ds"
+   ],
+   "stack": [
+    "PySpark",
+    "Spark SQL",
+    "Hive",
+    "MLlib"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "82.2%",
+     "fraud caught"
+    ],
+    [
+     "vs 47.2%",
+     "rules, same alerts"
+    ],
+    [
+     "10M",
+     "transactions"
+    ]
+   ],
+   "ring": {
+    "frac": 0.822,
+    "label": "fraud caught",
+    "value": "82.2%"
+   }
+  },
+  {
+   "id": "credit",
+   "repo": "credit-default-scorecard",
+   "title": "Credit Default Scorecard",
+   "tagline": "Points scorecard + approve/decline tool with plain-language reasons",
+   "tracks": [
+    "risk",
+    "ds"
+   ],
+   "stack": [
+    "scikit-learn",
+    "WoE / IV",
+    "Logistic Reg."
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "0.60",
+     "Gini"
+    ],
+    [
+     "0.48",
+     "KS"
+    ],
+    [
+     "-34%",
+     "expected cost"
+    ]
+   ],
+   "ring": {
+    "frac": 0.6,
+    "label": "Gini",
+    "value": "0.60"
+   }
+  },
+  {
+   "id": "traffic",
+   "repo": "Traffic-Management-using-Deep-Learning",
+   "title": "AI Traffic Signals (IEEE)",
+   "tagline": "YOLOv8 + ByteTrack counts vehicles and sets green time by demand",
+   "tracks": [
+    "cv",
+    "ds"
+   ],
+   "stack": [
+    "YOLOv8",
+    "ByteTrack",
+    "OpenCV"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "+14.1%",
+     "throughput"
+    ],
+    [
+     "-71%",
+     "idle green time"
+    ],
+    [
+     "IEEE",
+     "ICCCNT 2024"
+    ]
+   ],
+   "ring": {
+    "frac": 0.141,
+    "label": "more throughput",
+    "value": "+14%"
+   }
+  },
+  {
+   "id": "covid",
+   "repo": "covid19-time-series-forecasting",
+   "title": "COVID-19 Forecasting (UNLV)",
+   "tagline": "30-day forecasts for 6 countries with a leak-free rolling backtest",
+   "tracks": [
+    "ds"
+   ],
+   "stack": [
+    "SARIMAX",
+    "Prophet",
+    "Holt-Winters"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "-25%",
+     "error vs naive"
+    ],
+    [
+     "6",
+     "countries"
+    ],
+    [
+     "56%",
+     "surges flagged early"
+    ]
+   ],
+   "ring": {
+    "frac": 0.25,
+    "label": "less error",
+    "value": "-25%"
+   }
+  },
+  {
+   "id": "plant",
+   "repo": "plant-disease-detection-cnn",
+   "title": "Plant Disease CNN",
+   "tagline": "Leaf photo to diagnosis and treatment advice, 14 crops",
+   "tracks": [
+    "cv",
+    "ds"
+   ],
+   "stack": [
+    "PyTorch",
+    "CNN",
+    "Web app"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "99.05%",
+     "test accuracy"
+    ],
+    [
+     "38",
+     "classes"
+    ],
+    [
+     "0.986",
+     "macro F1"
+    ]
+   ],
+   "ring": {
+    "frac": 0.9905,
+    "label": "accuracy",
+    "value": "99.05%"
+   }
+  },
+  {
+   "id": "kitchen",
+   "repo": "smart-kitchen-iot",
+   "title": "Smart Kitchen IoT",
+   "tagline": "Arduino + ESP8266 sensors with an ML hazard detector and live dashboard",
+   "tracks": [
+    "cv",
+    "swe",
+    "ds"
+   ],
+   "stack": [
+    "ESP8266",
+    "C++",
+    "Python ML"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "12 s",
+     "gas-leak alarm"
+    ],
+    [
+     "vs 213 s",
+     "fixed threshold"
+    ],
+    [
+     "0.986",
+     "hazard F1"
+    ]
+   ],
+   "ring": {
+    "frac": 0.944,
+    "label": "faster alarm",
+    "value": "94%"
+   }
+  },
+  {
+   "id": "friends",
+   "repo": "Friend-Recommendation-Using-Graph-Data-Structure",
+   "title": "Friend Recommendation in C",
+   "tagline": "Link prediction (Adamic-Adar) on a real 22K-user social graph",
+   "tracks": [
+    "swe",
+    "ds"
+   ],
+   "stack": [
+    "C11",
+    "Graphs",
+    "BFS"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "83%",
+     "hit rate@10"
+    ],
+    [
+     "0.15 ms",
+     "per query"
+    ],
+    [
+     "171K",
+     "friendships"
+    ]
+   ],
+   "ring": {
+    "frac": 0.83,
+    "label": "hit rate@10",
+    "value": "83%"
+   }
+  },
+  {
+   "id": "mst",
+   "repo": "Graphical-demonstration-of-Minimum-Spanning-Tree-Krushkal-s-Algorithm-using-OpenGL",
+   "title": "Kruskal MST Visualiser",
+   "tagline": "OpenGL animation of Kruskal + union-find; India fibre backbone case study",
+   "tracks": [
+    "swe"
+   ],
+   "stack": [
+    "C++",
+    "OpenGL",
+    "Union-Find"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "-59%",
+     "cable length"
+    ],
+    [
+     "14",
+     "cities linked"
+    ],
+    [
+     "5,233 km",
+     "MST total"
+    ]
+   ],
+   "ring": {
+    "frac": 0.59,
+    "label": "less cable",
+    "value": "-59%"
+   }
+  },
+  {
+   "id": "os",
+   "repo": "OS-Labs",
+   "title": "Operating Systems Labs",
+   "tagline": "CPU, disk and page-replacement algorithms checked against textbook answers",
+   "tracks": [
+    "swe"
+   ],
+   "stack": [
+    "C",
+    "Bash",
+    "pytest"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "200",
+     "random workloads"
+    ],
+    [
+     "13",
+     "algorithms"
+    ],
+    [
+     "CI",
+     "verified"
+    ]
+   ],
+   "ring": {
+    "frac": 1.0,
+    "label": "tests pass",
+    "value": "100%"
+   }
+  },
+  {
+   "id": "rylaide",
+   "repo": "Rylaide",
+   "title": "Rylaide (in progress)",
+   "tagline": "Offline rider intercom + group ride app for motorcycles and EVs",
+   "tracks": [
+    "app",
+    "swe"
+   ],
+   "stack": [
+    "Kotlin",
+    "Android",
+    "Figma"
+   ],
+   "tests": false,
+   "metrics": [
+    [
+     "Offline",
+     "push-to-talk"
+    ],
+    [
+     "SOS",
+     "with location"
+    ],
+    [
+     "WIP",
+     "Android"
+    ]
+   ],
+   "ring": {
+    "frac": 1.0,
+    "label": "in progress",
+    "value": "WIP",
+    "dashed": true
+   }
+  }
+ ]
 }
