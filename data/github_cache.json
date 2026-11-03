@@ -1,17 +1,17 @@
 {
- "public_repos": 16,
+ "public_repos": 17,
  "followers": 0,
- "last_push": "2026-11-01",
+ "last_push": "2026-11-03",
  "languages": {
-  "Python": 335058,
+  "Python": 360357,
   "HTML": 25362,
-  "CSS": 58170,
+  "CSS": 69164,
   "C": 64592,
   "Makefile": 1899,
   "C++": 41992,
   "Shell": 2129,
-  "JavaScript": 271666,
-  "Kotlin": 234457,
+  "JavaScript": 526951,
+  "Kotlin": 313096,
   "TypeScript": 7558,
   "Swift": 6944,
   "Dockerfile": 389
