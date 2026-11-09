@@ -1,6 +1,7 @@
-<a href="https://www.linkedin.com/in/shubhan-punde-56378b222/"><img src="assets/banner.svg" width="100%" alt="Shubhan Punde: Cybersecurity & IAM Analyst, Security ML Engineer, Data Scientist, Fraud & Credit Risk Analyst, Data Engineer"/></a>
+<a href="https://drakeion2532.github.io/shubhanpunde.github.io/"><img src="assets/banner.svg" width="100%" alt="Shubhan Punde: Cybersecurity & IAM Analyst, Security ML Engineer, Data Scientist, Fraud & Credit Risk Analyst, Data Engineer"/></a>
 
 <p align="center">
+  <a href="https://drakeion2532.github.io/shubhanpunde.github.io/"><img src="https://img.shields.io/badge/Portfolio-drakeion2532.github.io-3DFFA2?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=141419"/></a>
   <a href="https://www.linkedin.com/in/shubhan-punde-56378b222/"><img src="https://img.shields.io/badge/LinkedIn-Shubhan%20Punde-FF5A1F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=141419"/></a>
   <a href="mailto:shubhanpunde@gmail.com"><img src="https://img.shields.io/badge/Email-shubhanpunde%40gmail.com-FFB23E?style=for-the-badge&logo=gmail&logoColor=white&labelColor=141419"/></a>
   <a href="https://ieeexplore.ieee.org/document/10725412"><img src="https://img.shields.io/badge/IEEE-2%20papers-FF3B5C?style=for-the-badge&logo=ieee&logoColor=white&labelColor=141419"/></a>
@@ -14,6 +15,9 @@
 I'm a Computer Engineering graduate from **VIT Pune (2026)** working where **identity security, cybersecurity and machine learning** meet. At **RNS Technology Services** I spent a year in Identity & Access Management and presales: hands-on **Saviynt IGA** (application onboarding, entitlements, access reviews), **Zero Trust** controls across identity, endpoint, cloud and network, and Python ML that automated 50% of a risk-detection workflow. Before that I was a **research intern at UNLV** (time-series forecasting) and a cybersecurity intern at Skolar.
 
 I build tools that **end in a decision someone can act on**: allow / step-up MFA / block, a ranked SOC alert queue, approve / decline with reasons. Every project ships with data, CI tests, a baseline to beat and an honest limitations section.
+
+> 🔐 **Portfolio & case studies →** [drakeion2532.github.io/shubhanpunde.github.io](https://drakeion2532.github.io/shubhanpunde.github.io/)  
+> Identity risk engine, PhishGuard, explainable IDS, Saviynt IGA work and 15 project write-ups, each with the numbers and the limits.
 
 <table>
 <tr>
