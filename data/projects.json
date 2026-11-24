@@ -41,7 +41,7 @@
    "id": "soclab",
    "repo": "soc-detection-lab",
    "title": "SOC Detection Lab",
-   "tagline": "Wazuh + Sysmon home SOC: harmless ATT&CK simulations, Sigma / Wazuh / Splunk detections",
+   "tagline": "Home SOC: ATT&CK simulations, Sigma + Wazuh rules",
    "tracks": [
     "sec"
    ],
