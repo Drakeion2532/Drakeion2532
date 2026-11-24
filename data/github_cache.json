@@ -1,19 +1,20 @@
 {
- "public_repos": 19,
+ "public_repos": 20,
  "followers": 0,
  "last_push": "2026-11-24",
  "languages": {
-  "Python": 431429,
-  "HTML": 424812,
-  "CSS": 140984,
+  "Python": 436941,
+  "HTML": 426905,
+  "CSS": 141200,
   "C": 67061,
   "Makefile": 1899,
   "C++": 43206,
   "Shell": 2129,
-  "JavaScript": 550027,
+  "JavaScript": 550302,
   "Kotlin": 385428,
   "TypeScript": 8058,
   "Swift": 6944,
-  "Dockerfile": 389
+  "Dockerfile": 389,
+  "PowerShell": 4835
  }
 }
