@@ -143,8 +143,7 @@ def fetch_live(cache: dict) -> dict:
 
 # ----------------------------------------------------------------------------- banner
 def banner(data):
-    roles = ["Cybersecurity & IAM Analyst", "Security ML Engineer", "Data Scientist",
-             "Fraud & Credit Risk Analyst", "Data Engineer (PySpark, Hive)"]
+    roles = ["IAM / IGA Analyst", "SOC / Cybersecurity Analyst", "Identity Threat Detection"]
     n, per = len(roles), 3.0
     total = n * per
     role_svg = ""
@@ -175,7 +174,7 @@ def banner(data):
                   f'begin="{(i % 7) * 0.3:.1f}s" repeatCount="indefinite"/></circle>')
     rings += (t(cx, cy - 2, "16", 30, TEXT, 700, "middle") + t(cx, cy + 18, "REPOS", 10, MUTED, 600, "middle", MONO, ' letter-spacing="2"'))
     chips, x = "", 64
-    for c in ["VIT Pune · B.Tech CE '26", "1 yr IAM & cybersecurity @ RNS", "Saviynt IGA · Zero Trust", "2 IEEE papers"]:
+    for c in ["VIT Pune · B.Tech CE '26", "1-yr IAM internship @ RNS", "Saviynt IGA · Zero Trust", "4 papers · 2 IEEE"]:
         w = 16 + len(c) * 7.4
         chips += (f'<rect x="{x:.0f}" y="226" width="{w:.0f}" height="30" rx="15" fill="{PANEL}" stroke="{LINE}"/>'
                   + t(x + w / 2, 246, c, 13, MUTED, 400, "middle"))
@@ -185,7 +184,7 @@ def banner(data):
             + t(64, 76, "HELLO, I'M", 15, DIM, 400, font=MONO, extra=' letter-spacing="3"')
             + t(62, 138, "Shubhan Punde", 62, TEXT, 700)
             + f'{role_svg}{chips}<rect x="0" y="296" width="1200" height="4" fill="url(#ember)"/>')
-    return svg(1200, 300, body, "Shubhan Punde: cybersecurity & IAM, security ML, data science")
+    return svg(1200, 300, body, "Shubhan Punde: IAM / IGA and SOC analyst, identity threat detection")
 
 
 # ----------------------------------------------------------------------------- profile dashboard (circles)
@@ -202,8 +201,8 @@ def dashboard(data, projects, tracks):
     b += t(px + 24, 106, "At a glance", 15, TEXT, 600)
     kpis = [
         ("ring", tested / len(projects), f"{tested}/{len(projects)}", "projects CI-tested", EMBER),
-        ("seg", (3, 3, [EMBER, EMBER, AMBER]), "3", "papers · 2 IEEE", AMBER),
-        ("seg", (12, 12, None), "12 mo", "IAM & security role", EMBER),
+        ("seg", (4, 4, [EMBER, EMBER, AMBER, AMBER]), "4", "papers · 2 IEEE", AMBER),
+        ("seg", (12, 12, None), "12 mo", "IAM internship (MSSP)", EMBER),
         ("ring", 1.0, str(data["public_repos"]), "public repositories", AMBER),
     ]
     for i, (kind, val, big, label, col) in enumerate(kpis):
@@ -241,7 +240,7 @@ def dashboard(data, projects, tracks):
     px3 = px2 + pw + 20
     b += f'<rect x="{px3}" y="76" width="{pw}" height="366" rx="14" fill="{PANEL}" stroke="{LINE}"/>'
     b += t(px3 + 24, 106, "Projects per role", 15, TEXT, 600) + t(px3 + pw - 24, 106, "radial bars", 11, DIM, 400, "end", MONO)
-    counts = sorted(((k, sum(k in p["tracks"] for p in projects)) for k in tracks), key=lambda kv: -kv[1])
+    counts = sorted(((k, sum(k in p["tracks"] for p in projects)) for k in tracks), key=lambda kv: (kv[0] != "sec", -kv[1]))  # security first
     mx = max(c for _, c in counts)
     rcx, rcy = px3 + 200, 262
     for i, (k, c) in enumerate(counts):
@@ -261,11 +260,11 @@ def timeline():
     W, H = 1200, 260
     events = [
         ("Nov 2022", "B.Tech starts", "VIT Pune · CE", AMBER, 10),
-        ("Sep 2023", "Cybersecurity intern", "Skolar · 500+ endpoints", EMBER, 12),
+        ("Sep 2023", "Cybersecurity intern", "Skolar · endpoint monitoring", EMBER, 12),
         ("Jun 2024", "IEEE ICCCNT paper", "YOLOv8 traffic", AMBER, 10),
         ("Jul 2024", "Research intern", "UNLV, USA · forecasting", EMBER, 13),
         ("Dec 2024", "IEEE ICICNIS paper", "Cyberbullying ensemble", AMBER, 10),
-        ("Jul 2025", "IAM & cybersecurity", "RNS Technology · 1 yr", EMBER, 17),
+        ("Jul 2025", "IAM internship", "RNS Technology · 1 yr", EMBER, 17),
         ("May 2026", "Saviynt ISAA", "certified", AMBER, 10),
         ("Jun 2026", "Graduated", "CGPA 8.14", AMBER, 11),
         ("Now", "Open to roles", "India · U.S. · remote", "#4ADE80", 14),
@@ -373,7 +372,7 @@ def footer():
                   f'M0 40 Q 150 0 300 30 T 600 30 T 900 30 T 1200 20 V 90 H 0 Z;'
                   f'M0 30 Q 150 55 300 30 T 600 35 T 900 25 T 1200 35 V 90 H 0 Z;'
                   f'M0 40 Q 150 0 300 30 T 600 30 T 900 30 T 1200 20 V 90 H 0 Z"/></path>'
-                  + t(600, 76, "Open to Cybersecurity · IAM · Security ML · Data Science · Risk · Data Engineering roles  ·  India / U.S. / remote",
+                  + t(600, 76, "Open to IAM / IGA · SOC · Cybersecurity analyst roles (entry-level or internship)  ·  India / U.S. / remote",
                       14, BG, 600, "middle"))
     return svg(1200, 90, b, "Open to roles")
 

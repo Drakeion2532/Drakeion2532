@@ -1,4 +1,4 @@
-<a href="https://shubhanpunde.vercel.app/"><img src="assets/banner.svg" width="100%" alt="Shubhan Punde: Cybersecurity & IAM Analyst, Security ML Engineer, Data Scientist, Fraud & Credit Risk Analyst, Data Engineer"/></a>
+<a href="https://shubhanpunde.vercel.app/"><img src="assets/banner.svg" width="100%" alt="Shubhan Punde: IAM / IGA Analyst, SOC / Cybersecurity Analyst, identity threat detection"/></a>
 
 <p align="center">
   <a href="https://shubhanpunde.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-shubhanpunde.vercel.app-3DFFA2?style=for-the-badge&logo=vercel&logoColor=white&labelColor=141419"/></a>
@@ -7,12 +7,12 @@
   <a href="https://ieeexplore.ieee.org/document/10725412"><img src="https://img.shields.io/badge/IEEE-2%20papers-FF3B5C?style=for-the-badge&logo=ieee&logoColor=white&labelColor=141419"/></a>
   <a href="https://certification.saviynt.com/961c5f95-ccc1-4138-a715-f018e287609d#acc.ueJPXyiW"><img src="https://img.shields.io/badge/Saviynt-ISAA%20certified-C084FC?style=for-the-badge&labelColor=141419"/></a>
   <img src="https://img.shields.io/badge/Open%20to%20work-India%20%C2%B7%20USA%20%C2%B7%20Remote-4ADE80?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=141419"/>
-  <img src="https://img.shields.io/badge/U.S.%20Citizen-no%20sponsorship%20needed-5BC0EB?style=for-the-badge&labelColor=141419"/>
+  <img src="https://img.shields.io/badge/American%20citizen%20%2B%20OCI-no%20visa%20needed%20for%20India%20or%20U.S.-5BC0EB?style=for-the-badge&labelColor=141419"/>
 </p>
 
 <img src="assets/h-about.svg" width="100%" alt="About me"/>
 
-I'm a Computer Engineering graduate from **VIT Pune (2026)** working where **identity security, cybersecurity and machine learning** meet. At **RNS Technology Services** I spent a year in Identity & Access Management and presales: hands-on **Saviynt IGA** (application onboarding, entitlements, access reviews), **Zero Trust** controls across identity, endpoint, cloud and network, and Python ML that automated 50% of a risk-detection workflow. Before that I was a **research intern at UNLV** (time-series forecasting) and a cybersecurity intern at Skolar.
+I'm a Computer Engineering graduate from **VIT Pune (2026)** working where **identity security, cybersecurity and machine learning** meet. At **RNS Technology Services** (an MSSP) I did a 1-year IAM internship: hands-on **Saviynt IGA** under senior guidance (application onboarding, entitlements, access reviews), **Zero Trust** pre-sales across identity, endpoint, cloud and network, EDR/SOC alert analytics with exposure to **CrowdStrike Falcon** and **SentinelOne**, and Python ML that automated ~50% of a risk-detection workflow. Before that I was a **research intern at UNLV** (time-series forecasting) and a cybersecurity intern at Skolar.
 
 I build tools that **end in a decision someone can act on**: allow / step-up MFA / block, a ranked SOC alert queue, approve / decline with reasons. Every project ships with data, CI tests, a baseline to beat and an honest limitations section.
 
@@ -23,22 +23,23 @@ I build tools that **end in a decision someone can act on**: allow / step-up MFA
 <tr>
 <td width="50%" valign="top">
 
-**🎯 Roles I'm open to**
-- IAM / IGA Analyst · Cybersecurity / SOC Analyst
-- Security ML / Detection Engineer
-- Data Scientist · Fraud & Risk Analyst
-- Data Engineer / Analytics Engineer
-- Backend / Software Engineer (Python, C/C++)
+**🎯 Roles I'm open to** (entry-level or internship)
+- IAM / IGA Analyst
+- SOC Analyst
+- Cybersecurity Analyst
+
+The ML, data and software projects below show the engineering range behind the security work.
 
 </td>
 <td width="50%" valign="top">
 
 **⚡ Quick facts**
-- **1 yr** IAM & cybersecurity at RNS Technology Services
-- **Saviynt ISAA** · IBM Data Warehouse Engineer certified
-- **3 papers** published, 2 in **IEEE Xplore**
+- **1-year IAM internship** at RNS Technology Services (MSSP)
+- **Saviynt ISAA** certified · CEH and CompTIA Security+ in progress
+- **4 papers** published: 2 in **IEEE Xplore**, 1 Springer
 - **13 of 14** projects tested automatically in CI
-- **U.S. Citizen** (no sponsorship) · based in Pune · open to India, USA and remote · available now
+- **American citizen with OCI card** (no visa or sponsorship needed for India or the U.S.) · based in Pune · available now
+- 🏓 National-level table tennis player
 
 </td>
 </tr>
@@ -108,11 +109,15 @@ I build tools that **end in a decision someone can act on**: allow / step-up MFA
 
 | | Publication | Venue |
 |---|---|---|
+| 📄 | [Real-Time Traffic Collision Detection & Automated Reporting](https://doi.org/10.1007/978-3-032-35173-9_2) | Springer IJCACI 2025 |
 | 📄 | [Real-Time Traffic Management Using Deep Learning and Object Detection using YOLOv8](https://ieeexplore.ieee.org/document/10725412) | IEEE ICCCNT 2024 |
 | 📄 | [Multi-Model Ensemble Approach for Enhanced Cyberbullying Detection Across Diverse Categories](https://ieeexplore.ieee.org/document/10823191) | IEEE ICICNIS 2024 |
 | 📄 | [Patient Mitra: Health Card](https://openurl.ebsco.com/EPDB%3Agcd%3A3%3A2283619/detailv2?sid=ebsco%3Aocu%3Arecord&id=ebsco%3Agcd%3A171360364&bquery=IS%202395-5287%20AND%20VI%209%20AND%20IP%202%20AND%20DT%202023&page=1) | GIJET 2023 |
 
-**Certifications:** [IBM Data Warehouse Engineer](https://www.coursera.org/account/accomplishments/specialization/E5PB8YR2VWKP) · [Saviynt ISAA](https://certification.saviynt.com/961c5f95-ccc1-4138-a715-f018e287609d#acc.ueJPXyiW) · Data Analyst (GeeksforGeeks) · Querying Databases with SQL
+**Certifications:** [Saviynt ISAA](https://certification.saviynt.com/961c5f95-ccc1-4138-a715-f018e287609d#acc.ueJPXyiW) · Google Foundations of Cybersecurity · Cybersecurity Essentials (Coursera) · [IBM Data Warehouse Engineer](https://www.coursera.org/account/accomplishments/specialization/E5PB8YR2VWKP) · Data Analyst (GeeksforGeeks)  
+**In progress:** CEH (EC-Council) · CompTIA Security+ · TryHackMe SOC Level 1
+
+**How I build:** I use AI pair-programming (Claude Code) for implementation. I design the detection logic, threat models and evaluations myself, and I re-run and check every number before it goes in a README.
 
 <details>
 <summary><b>How this profile stays current</b></summary>
@@ -121,4 +126,4 @@ The banner, dashboard and project cards are SVGs generated by [`scripts/build_pr
 
 </details>
 
-<img src="assets/footer.svg" width="100%" alt="Open to Cybersecurity, IAM, Security ML, Data Science, Risk and Data Engineering roles"/>
+<img src="assets/footer.svg" width="100%" alt="Open to IAM / IGA, SOC and cybersecurity analyst roles, entry-level or internship"/>
