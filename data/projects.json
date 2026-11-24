@@ -41,7 +41,7 @@
    "id": "identity",
    "repo": "identity-risk-engine",
    "title": "Identity Risk Engine (UEBA)",
-   "tagline": "Zero Trust login scoring: allow, step-up MFA or block, with reasons",
+   "tagline": "Zero Trust login scoring with ATT&CK-mapped reasons, plus 4 deployable Sigma rules",
    "tracks": [
     "sec",
     "ds",
@@ -49,7 +49,7 @@
    ],
    "stack": [
     "Isolation Forest",
-    "FastAPI",
+    "Sigma rules",
     "Okta logs"
    ],
    "tests": true,
@@ -77,7 +77,7 @@
    "id": "phish",
    "repo": "phishing-url-detector",
    "title": "PhishGuard",
-   "tagline": "Scam & phishing checker for SMS, WhatsApp, email and links + Chrome extension",
+   "tagline": "Scam & phishing checker for SMS, WhatsApp and links + Chrome extension; model integrity-pinned",
    "tracks": [
     "sec",
     "ds",
@@ -113,7 +113,7 @@
    "id": "nids",
    "repo": "network-intrusion-detection",
    "title": "Explainable Intrusion Detection",
-   "tagline": "Ensemble + zero-day anomaly detector with SHAP reasons for SOC triage",
+   "tagline": "Ensemble + zero-day anomaly detector, SHAP reasons, ATT&CK-mapped SOC incidents",
    "tracks": [
     "sec",
     "ds"
@@ -147,12 +147,12 @@
   {
    "id": "sahyog",
    "repo": "doctor-sahyog-health-card",
-   "title": "Doctor Sahyog Health Card",
-   "tagline": "QR health card EHR with role-based access, audit trail and FHIR export",
+   "title": "Doctor Sahyog: Secure Health Records",
+   "tagline": "STRIDE-reviewed EHR: encrypted fields, signed QR, RBAC, append-only audit log",
    "tracks": [
+    "sec",
     "swe",
-    "app",
-    "sec"
+    "app"
    ],
    "stack": [
     "Flask",
@@ -162,12 +162,12 @@
    "tests": true,
    "metrics": [
     [
-     "115",
-     "Figma screens"
+     "18",
+     "security tests"
     ],
     [
-     "3",
-     "access roles"
+     "STRIDE",
+     "threat model"
     ],
     [
      "GIJET",
