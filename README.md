@@ -119,7 +119,7 @@ The ML, data and software projects below show the engineering range behind the s
 **Certifications:** [Saviynt ISAA](https://certification.saviynt.com/961c5f95-ccc1-4138-a715-f018e287609d#acc.ueJPXyiW) · Google Foundations of Cybersecurity · Cybersecurity Essentials (Coursera) · [IBM Data Warehouse Engineer](https://www.coursera.org/account/accomplishments/specialization/E5PB8YR2VWKP) · Data Analyst (GeeksforGeeks)  
 **In progress:** CEH (EC-Council) · CompTIA Security+ · TryHackMe SOC Level 1
 
-**How I build:** I use AI pair-programming (Claude Code) for implementation. I design the detection logic, threat models and evaluations myself, and I re-run and check every number before it goes in a README.
+**How I build:** I use AI pair-programming (Claude Code) for implementation. I design the approach and the evaluation myself (detection logic and threat models for the security work, models and baselines for the ML and data work, algorithms and tests for the systems work), and I re-run and check every number before it goes in a README.
 
 <details>
 <summary><b>How this profile stays current</b></summary>
