@@ -56,6 +56,8 @@ The ML, data and software projects below show the engineering range behind the s
 ### 🛡️ Security, Detection & Identity (SOC / IAM)
 <sub>For IAM, SOC and detection-engineering roles: every alert comes with a reason an analyst can check.</sub>
 
+<a href="https://github.com/Drakeion2532/soc-detection-lab"><img src="assets/projects/soclab.svg" width="100%" alt="SOC Detection Lab: Wazuh, Sysmon and Sigma"/></a>
+
 <table><tr>
 <td width="50%"><a href="https://github.com/Drakeion2532/identity-risk-engine"><img src="assets/projects/identity.svg" width="100%" alt="Identity Risk Engine"/></a></td>
 <td width="50%"><a href="https://github.com/Drakeion2532/phishing-url-detector"><img src="assets/projects/phish.svg" width="100%" alt="PhishGuard"/></a></td>

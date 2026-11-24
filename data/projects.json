@@ -38,6 +38,40 @@
  },
  "projects": [
   {
+   "id": "soclab",
+   "repo": "soc-detection-lab",
+   "title": "SOC Detection Lab",
+   "tagline": "Wazuh + Sysmon home SOC: harmless ATT&CK simulations, Sigma / Wazuh / Splunk detections",
+   "tracks": [
+    "sec"
+   ],
+   "stack": [
+    "Wazuh",
+    "Sysmon",
+    "Sigma"
+   ],
+   "tests": true,
+   "metrics": [
+    [
+     "5",
+     "ATT&CK techniques"
+    ],
+    [
+     "3",
+     "rule formats"
+    ],
+    [
+     "13",
+     "consistency tests"
+    ]
+   ],
+   "ring": {
+    "frac": 1.0,
+    "label": "techniques covered",
+    "value": "5/5"
+   }
+  },
+  {
    "id": "identity",
    "repo": "identity-risk-engine",
    "title": "Identity Risk Engine (UEBA)",
